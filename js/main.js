@@ -1,3 +1,5 @@
+import handleToggleTheme from "./handletoggletheme";
+
 const inputEl= document.querySelector("[data-input-string]");
 const buttonEl= document.querySelector("[data-button-copy");
 const chipEl= document.querySelector("[data-chip");
@@ -26,3 +28,7 @@ if(event.key==="Enter"){
 }
 })
 buttonEl.addEventListener("click",handleReverse)
+
+toggleEl.addEventListener("click",()=>{
+    handleToggleTheme();
+})
